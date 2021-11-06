@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Mulish", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 80vh;
+  width: 70vh;
+  gap: 10px;
+}
+
+.panels {
+  transition: all 1s ease-in;
+  flex: 0.7;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.panels.active {
+  flex: 5;
+}
+
+h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: small;
+}
